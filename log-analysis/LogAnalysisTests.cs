@@ -31,7 +31,7 @@ public class LogAnalysisTests
     {
         Assert.Equal("SOMETHING", "FIND >>> SOMETHING <===< HERE".SubstringBetween(">>> ", " <===<"));
     }
-    
+
     [Fact]
     [Task(3)]
     public void Message()
@@ -45,6 +45,6 @@ public class LogAnalysisTests
     public void LogLevel()
     {
         var log = "[WARNING]: Library is deprecated.";
-        Assert.Equal("WARNING", log.LogLevel());;
+        Assert.Equal("WARNING", log.LogLevel()); ;
     }
 }
